@@ -25,31 +25,36 @@
     - b: The b tag is similar to the strong tag, as in it will display the text in bold, however it will no add any extra important to the text.    
     - i: The i tag is used to give a part of text an alternate voice or mood. The content will be displayed in italics.
     - small: The small tag is used to render the text to be smaller. 
-    
+
 6. Explain block Elements and also explain list of block elements and why they are used from below:
-- html:
-- head:
-- body:
-- header:
-- nav:
-- main:
-- section:
-- article:
-- div:
-- aside:
-- footer:
-- span:
-- small:
+    - html: The html block elemetn is used to create the website. It creates the white canvas that you then fill with your content.
+    - head: The head block element is placed between the html block element, and the body block element. This commonly includes things such as the document title, styles, and other metadata.
+    - body: The body block element is the section that contains the most of your information. Inside you include everything that the viewer will read and see such as your nav, your header, the main, etc.
+    - header: The header is the container used for introductory content. It's commonly used for the navigation section of any introduction text. It is placed at the top of the page.
+    - nav: The nav tag is used to contain your set of navigation links. It is usually settled into the top of the page. 
+    - main: The main block element is where you include the bulk of your content. This shouldn't include any parts such as nav, logos, copyright, etc, but only the main content of your webpage. 
+    - section: The section block element is used to separate your content into separate sections. If you have 2 paragraphs with two different headers, you would divide them into sections.
+    - article: An article tag is similar to a section tag, however, article is used for self contained content. It should be clear on its own and is a whole in of itself, compared to a section which is a part of another.
+    - div: The div tag is used to divide a section of your html to then be styled separately, or simply to include the space between your content.
+    - aside: The aside block element is used to place your content on the side of the page. It should be related to the surrounding content, but not enough to be fully incorporated. 
+    - footer: The footer block element can be found at the bottom of the webpage. It's used to define and divide that section from the rest of your webpage. It typically includes the copyright information and any company information such as emails, phone numbers, etc.
+    - span: The span tag is a container used to mark up a part of your document. This helps you style is easier later in your CSS file.
+    - small: The small tag is used to make the size of your text smaller.
+
 7. Explain why accessibility is important and also explain the accessibility properties like:
-- landmark roles:
-- aria labels:
-- image alternative texts:
+    Accessibility is important within your HTML file because it allows those with disabilities to enjoy your webpage as much as any other person could. It allows screen readers to properly read out your content to those who might not be able to themselves.
+    - landmark roles: The landmark role is used to help the readers easily navigate through your webpage. It also makes it faster to find specific content.
+    - aria labels: Aria labels are used to specify a certain part of your html further for those who use things such as screen readers. It helps define what those who can't see will miss.
+    - image alternative texts: The image alternative texts are used in case your image can not be displayed. It also describes the image so that screen readers can describe what should have been displayed or simply give a mental image to those who can't see.
+
 8. What is CSS and how can we implement CSS to our html file (write proper explanation with the code required to attach a CSS file inside html file).
-- 
+    - CSS is the file and style sheet used to decorate and re-design the layout of your webpage. To implement the CSS file into your HTML file, you have to first of all create the folder and the file. Starting by naming your folder CSS, the creating a file named style.css . Inside of your html, you include the link tag (<link rel="stylesheet" href="css/style.css">) and hit save! Now anything you style inside of your css style sheet will affect your html file.
+
 9. What is the difference between CSS property and value (write explanation and example code).
-- 
+    - A CSS property is used to define how you will change your html. This can be the size, the font, the colour, etc. The CSS value is used to define how, withing that selector, you will change it. This is where you would choose what size, which font, which colour, etc.
+
 10. Why do we use border-box property in CSS?
-- 
+    - The border-box property is used to ake into account any future values you will add to your content. If you were to add a border or any padding, the border-box property would take onto account those values and the content will change accordingly.
 11. Explain different type of ways we can add spacing to an element.
 - 
 12. What is the main difference between margin and padding?
