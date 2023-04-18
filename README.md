@@ -48,7 +48,8 @@
     - image alternative texts: The image alternative texts are used in case your image can not be displayed. It also describes the image so that screen readers can describe what should have been displayed or simply give a mental image to those who can't see.
 
 8. What is CSS and how can we implement CSS to our html file (write proper explanation with the code required to attach a CSS file inside html file).
-    - CSS is the file and style sheet used to decorate and re-design the layout of your webpage. To implement the CSS file into your HTML file, you have to first of all create the folder and the file. Starting by naming your folder CSS, the creating a file named style.css . Inside of your html, you include the link tag (<link rel="stylesheet" href="css/style.css">) and hit save! Now anything you style inside of your css style sheet will affect your html file.
+    - CSS is the file and style sheet used to decorate and re-design the layout of your webpage. To implement the CSS file into your HTML file, you have to first of all create the folder and the file. Starting by naming your folder CSS, the creating a file named style.css . Inside of your html, you include the link tag '<link rel="stylesheet" href="css/style.css>' 
+    and hit save! Now anything you style inside of your css style sheet will affect your html file.
 
 9. What is the difference between CSS property and value (write explanation and example code).
     - A CSS property is used to define how you will change your html. This can be the size, the font, the colour, etc. The CSS value is used to define how, withing that selector, you will change it. This is where you would choose what size, which font, which colour, etc.
@@ -66,21 +67,39 @@
     - There are many different kinds of display properties, but some of the main ones are inline, inline-block, block, flex, and flexbox. 
 
 14. Write a brief explanation of flexbox property.
-    - A flexbox property is a one-dimensional layout model. It is used for putting space between items and distributing them across the page.
+    - A flexbox property is a one-dimensional layout model.
 
 15. What are different types of flexbox properties and what is the major difference between them?
     - The different types of flexbox properties are flex-direction, flex-flow, flex-wrap, justify-content, align-items and align-content. The major difference between them is that some are used to change how they are displayed one against another (flex-flow, flex-wrap, flex-direction), and the others (align-items, align-content, justify-content) are used to change how they are displayed on the webpage.
-    
+
 16. Explain with code the use of flexbox property on a parent element and also explain the sub properties you might need for the flexbox property.
-- 
+    - '.class {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }'
+    Sub properties are what you use to indicate how they will move within the property selected. Example, if you use align-content, where are you aligning it to? The start, center, or the end? Is your flex-direction vertical? Or maybe horizontal?
+
 17. Write a code example on how you will use a flexbox property on a parent element with sub properties.
-- 
+    - '.class {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    This examples indicates that there are multiple pieces of content that will wrap amongst each other. If we assume they're images, these flexbox properties will select them all, and move them all together according to the values set.
+
 18. What is CSS grid property?
-- 
-19. Write the parent and two sub properties sed for CSS Grid Property. 
-- 
+    - CSS grid property is a two-dimentional layout model.
+
+19. Write the parent and two sub properties used for CSS Grid Property. 
+    - '.class {
+        display: grid;
+    }'
+    Similar to the flexbox property, grid property needs to be clarfied at the start of the CSS code to be used. This code allows you to then used the different grid properties on your content.
+
 20. What is the difference between display: flex and display: grid?
-- 
+    - The difference between display: flex; and display: grid; is that flexbox, designed for a one dimensional layout, and that grid was designed for two dimensional layout. While a flexbox allows you to transform your content in eiher a row, or a column, grid allows you to used both rows and columns at the same time.
+    
 21. What sub-property we use to divide elements in CSS Grid properties?
 - 
 22. What unit we use to fractionally divide the element width in CSS grid property and what are other units we can use alternatively? (Write code example).
