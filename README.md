@@ -55,16 +55,22 @@
 
 10. Why do we use border-box property in CSS?
     - The border-box property is used to ake into account any future values you will add to your content. If you were to add a border or any padding, the border-box property would take onto account those values and the content will change accordingly.
+
 11. Explain different type of ways we can add spacing to an element.
-- 
+    - Different types of ways we can add spacing to an element are with margin and padding. Another way is to simply use a p tag, though that will only add space between your different sections of text. Simply using the spacebar won't work because the html will condense it into 1 space naturally.
+
 12. What is the main difference between margin and padding?
-- 
+    - Padding, is used to put space between the content and its border. Margin, is used to put space between the content, and other content surrounding it.
+
 13. What are different types of display properties?
-- 
+    - There are many different kinds of display properties, but some of the main ones are inline, inline-block, block, flex, and flexbox. 
+
 14. Write a brief explanation of flexbox property.
-- 
+    - A flexbox property is a one-dimensional layout model. It is used for putting space between items and distributing them across the page.
+
 15. What are different types of flexbox properties and what is the major difference between them?
-- 
+    - The different types of flexbox properties are flex-direction, flex-flow, flex-wrap, justify-content, align-items and align-content. The major difference between them is that some are used to change how they are displayed one against another (flex-flow, flex-wrap, flex-direction), and the others (align-items, align-content, justify-content) are used to change how they are displayed on the webpage.
+    
 16. Explain with code the use of flexbox property on a parent element and also explain the sub properties you might need for the flexbox property.
 - 
 17. Write a code example on how you will use a flexbox property on a parent element with sub properties.
