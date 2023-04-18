@@ -99,14 +99,22 @@
 
 20. What is the difference between display: flex and display: grid?
     - The difference between display: flex; and display: grid; is that flexbox, designed for a one dimensional layout, and that grid was designed for two dimensional layout. While a flexbox allows you to transform your content in eiher a row, or a column, grid allows you to used both rows and columns at the same time.
-    
+
 21. What sub-property we use to divide elements in CSS Grid properties?
-- 
+    - The sub-property used to divide elements in CSS Grid properties is either 'grid-template-rows' or 'grid-template-columns'. After you set the values (how many, how big, etc).
+
 22. What unit we use to fractionally divide the element width in CSS grid property and what are other units we can use alternatively? (Write code example).
-- 
+    - '.class {
+        display: grid;
+        grid-template-rows: 1fr, 1fr, 1fr;
+    }'
+    The unit used to fractionally divide the element width in CSS grid property is 'fr'. Though you can also use percentages.
+
 23. What is the area property in CSS grid we use for the child elements?
-- 
+    - The area property in CSS grid that is used for the child elements is grid-area. 
+
 24. Which sub-property of display grid you can use to prevent displaying empty columns. Write a code example of that property.
-- 
+    - The sub-property of display grid that you can use to prevent displaying empty columns is 'grid-auto-columns'.With the added value of 'min-content', your columns will become the minimum width needed to fill the area and prevent empty space.
+
 25. Explain the steps to add google fonts to your CSS file and how will you link it to the html file.
-- 
+    - To add google fonts to your CSS file, you first need to pick your font. Go on to the website https://fonts.google.com and for the purpose of this example, we'll use 'Playfair Display'. Then you pick the specifics, whether it's bold or regular, italics or normal, etc. Under where you see your selected fonts, there is a section called "Use on the web" and there is a link already prepared for you to copy and past into the head of your html. Then, you need to link it to your CSS. Directly under your first link, there's another link, once again prepared for you, to copy and paste into your CSS style sheet. Do make sure you select your html in your CSS file when placing the link!
